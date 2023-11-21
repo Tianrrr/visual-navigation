@@ -1,20 +1,33 @@
 ## Vision-based Navigation
 
-This code is a part of the practical course "Vision-based Navigation" (IN2106) taught at the Technical University of Munich.
+![alt text](https://github.com/Tianrrr/visual-navigation/blob/main/result/GUI.png?raw=true)
+## Thirdparty
 
-It was originally developed for the winter term 2018. The latest iteration is summer term 2023.
+`mkdir thirdparty`
 
-The authors are Vladyslav Usenko, Nikolaus Demmel, David Schubert and Zhakshylyk Nurlanov.
-
-### License
-
-The code for this practical course is provided under a BSD 3-clause license. See the LICENSE file for details.
-
-Parts of the code (`include/tracks.h`, `include/union_find.h`) are adapted from OpenMVG and distributed under an MPL 2.0 licence.
-
-Parts of the code (`include/local_parameterization_se3.hpp`, `src/test_ceres_se3.cpp`) are adapted from Sophus and distributed under an MIT license.
-
-Note also the different licenses of thirdparty submodules.
-
+Install all dependencies and place them in the "./thirdparty" folder.
 
 You can find [setup instructions here.](wiki/Setup.md)
+
+## Dataset
+
+`mkdir data`
+
+EuRoC MAV Dataset: https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
+
+Download data, unzip it, and place it in the "./data" folder.
+
+## Running 
+
+`mkdir build`
+
+`cd build`
+
+`cmake ..`
+
+`make`
+
+`./build/odometry --dataset-path ./data/V1_01_easy/mav0`
+
+## Result
+
