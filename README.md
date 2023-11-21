@@ -1,4 +1,4 @@
-## Vision-based Navigation
+## Visual-Inertial Odometry
 
 ![alt text](https://github.com/Tianrrr/visual-navigation/blob/main/result/GUI.png?raw=true)
 ## Thirdparty
@@ -29,5 +29,21 @@ Download data, unzip it, and place it in the "./data" folder.
 
 `./build/odometry --dataset-path ./data/V1_01_easy/mav0`
 
-## Result
+## Result (Comparison with Visual Odometry)
+![alt text](https://github.com/Tianrrr/visual-navigation/blob/main/result/WechatIMG103.jpg?raw=true)
+
+### MH_01
+<div align=center>
+  <img src=https://github.com/Tianrrr/visual-navigation/blob/main/result/mh_01/vo_xyz.png width = 50%><img src=https://github.com/Tianrrr/visual-navigation/blob/main/result/mh_01/vio_xyz.png width = 50%>
+  <p>left: vo; right: vio</p>
+</div>
+
+### MH_05
+<div align=center>
+  <img src=https://github.com/Tianrrr/visual-navigation/blob/main/result/mh_05/vo_xyz.png width = 50%><img src=https://github.com/Tianrrr/visual-navigation/blob/main/result/mh_05/vio_xyz.png width = 50%>
+  <p>left: vo failed; right: vio</p>
+</div>
+
+
+
 
